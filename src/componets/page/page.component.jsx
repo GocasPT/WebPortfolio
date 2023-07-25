@@ -1,7 +1,7 @@
 import React from "react";
 
 import { PAGE_TYPE } from "../../constantes";
-import { Home, Projects, AboutMe } from "../"
+import { Home, Projects, About } from "../"
 import "./page.css";
 
 function Page(props) {
@@ -17,7 +17,7 @@ function Page(props) {
             componentToRender = <Projects/>;
             break;
         case PAGE_TYPE.ABOUT_ME:
-            componentToRender = <AboutMe/>;
+            componentToRender = <About/>;
             break;
         default:
             componentToRender = <Home/>;

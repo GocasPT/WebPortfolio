@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { PAGE_TYPE } from "./constantes"
 import { Header, Page, Footer, } from "./componets"
 import './assets/styles/App.css';
