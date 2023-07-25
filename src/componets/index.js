@@ -1,0 +1,7 @@
+export { default as Header } from "./header/header.component"
+export { default as Footer } from "./footer/footer.component"
+export { default as Card } from "./card/card.component"
+export { default as Page } from "./page/page.component"
+export { default as Home } from "./home/home.component"
+export { default as Projects } from "./projects/projects.component"
+export { default as AboutMe } from "./about_me/about_me.component"
