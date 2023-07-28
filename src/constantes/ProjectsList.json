@@ -1,21 +1,21 @@
 {
-    "SOLO": [
-      {
-        "name": "TopeBot",
-        "description": "A Discord bot powered by Discord.js is a dynamic AI companion for Discord servers. Utilizing the Discord API, this bot can be customized to perform various tasks, from moderating and playing music to providing real-time information. With flexibility and functionality at its core, Discord.js bots enhance Discord communities with ease and excitement.",
-        "url": "https://github.com/GocasPT/TopeBot-Discord.js"
-      },
-      {
-        "name": "The 25 Game",
-        "description": "In develop",
-        "url": "https://github.com/GocasPT/The-25-Game"
-      }
-    ],
-    "GROUP": [
-      {
-        "name": "CanSat",
-        "description": "CanSat is a miniature satellite in a can-sized package, offering hands-on learning in aerospace engineering and space science. With sensors and communication systems, it conducts scientific experiments during a controlled descent from high altitudes. This educational tool inspires students and enthusiasts alike to explore the realms of space technology and fosters practical skills and knowledge in a challenging and rewarding way.",
-        "url": "https://www.esero.pt/projetos-escolares/2022-2023/cansatpt"
-      }
-    ]
+  "GROUP": [
+    {
+      "name": "CanSat",
+      "description": "CanSat is a miniature satellite in a can-sized package, offering hands-on learning in aerospace engineering and space science. With sensors and communication systems, it conducts scientific experiments during a controlled descent from high altitudes. This educational tool inspires students and enthusiasts alike to explore the realms of space technology and fosters practical skills and knowledge in a challenging and rewarding way.",
+      "url": "https://www.esero.pt/projetos-escolares/2022-2023/cansatpt"
+    }
+  ],  
+  "SOLO": [
+    {
+      "name": "TopeBot",
+      "description": "A Discord bot powered by Discord.js is a dynamic AI companion for Discord servers. Utilizing the Discord API, this bot can be customized to perform various tasks, from moderating and playing music to providing real-time information. With flexibility and functionality at its core, Discord.js bots enhance Discord communities with ease and excitement.",
+      "url": "https://github.com/GocasPT/TopeBot-Discord.js"
+    },
+    {
+      "name": "The 25 Game",
+      "description": "In develop...",
+      "url": "https://github.com/GocasPT/The-25-Game"
+    }
+  ]
 }

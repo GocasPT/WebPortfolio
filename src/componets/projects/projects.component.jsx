@@ -1,5 +1,5 @@
 import React from "react";
-import PROJECTS_LIST from "../../constantes/ProjectsList.json";
+import { LIST_TYPE, PROJECTS_LIST } from "../../constantes";
 import { Card } from "../"
 import "./projects.css";
 
@@ -11,13 +11,13 @@ function Projects() {
             <div>
                 <h3>Group</h3>
                 {PROJECTS_LIST.GROUP.map(obj => (
-                    <Card key={obj.name} objCard={obj}/>
+                    <Card key={obj.name} typeCard={LIST_TYPE.PROJECTS} objCard={obj}/>
                 ))}
             </div>
             <div>
                 <h3>Solo</h3>
                 {PROJECTS_LIST.SOLO.map(obj => (
-                    <Card key={obj.name} objCard={obj}/>
+                    <Card key={obj.name} typeCard={LIST_TYPE.PROJECTS} objCard={obj}/>
                 ))}
             </div>
         </section>

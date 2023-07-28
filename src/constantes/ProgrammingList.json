@@ -6,37 +6,33 @@
     },
     {
       "name": "C++",
-      "icon": "ICON_c++.png",
+      "icon": "ICON_cplusplus.png",
       "skillLevel": 5
     },
     {
       "name": "C#",
-      "icon": "ICON_c#.png",
+      "icon": "ICON_csharp.png",
       "skillLevel": 4
     },
     {
       "name": "Java",
       "icon": "ICON_java.png",
-      "skillLevel": 4,
-      "extraTool": [
-        {
-          "name": "JavaFX",
-          "icon": "ICON_javafx.png",
-          "skillLevel": 5
-        }
-      ]
+      "skillLevel": 4
+    },
+    {
+      "name": "JavaFX",
+      "icon": "ICON_javafx.png",
+      "skillLevel": 5
     },
     {
       "name": "JavaScript",
       "icon": "ICON_javascrip.png",
-      "skillLevel": 5,
-      "extraTool": [
-        {
-          "name": "Raect",
-          "icon": "ICON_react.png",
-          "skillLevel": 5
-        }
-      ]
+      "skillLevel": 5
+    },
+    {
+      "name": "Raect",
+      "icon": "ICON_react.png",
+      "skillLevel": 5
     },
     {
       "name": "Python",
