@@ -1,5 +1,8 @@
 @use '../../assets/styles/variables';
 
+//TODO: continuar o embelezamento dos cards (ver a parte do software - butao do link ou ser um butao?)
+//TODO: adicionar as aniamções
+//TODO: completar o scss
 .card {
     position: relative;
     overflow: hidden;
@@ -9,8 +12,10 @@
     margin: 10px;
     height: 10rem;
     width: 30rem;
-    border: 2px solid variables.$outline ;
+    border: 2px solid variables.$outline;
     border-radius: 25px;
+    background-color: variables.$background-ligth-color;
+    font-family: variables.$source-sans;
 
     a {
         height: inherit;
@@ -22,6 +27,7 @@
     &.game {
         height: 15rem;
         width: 40rem;
+        background-color: transparent;
 
         .content {
             display: flex;
@@ -43,8 +49,6 @@
                 font-size: 3rem;
                 font-weight: bold;
                 color: white;
-                /* height: 5em;
-                width: 100%; */
                 margin: 1rem 0 0 0;
                 text-align: center;
             }
@@ -78,6 +82,8 @@
         }
 
         &:hover {
+            background-color: variables.$background-ligth-color;
+
             .art {
                 opacity: 0;
             }

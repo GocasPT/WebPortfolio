@@ -7,13 +7,19 @@ import "./header.css";
 function Header(props) {
     const { onButtonClick } = props;
 
+    const pageTypeKeys = Object.keys(PAGE_TYPE);
+
     return(
-        <div className="Header">
-            <p>Header</p>
-            <button className="Button" onClick={() => onButtonClick(PAGE_TYPE.HOME)}>{PAGE_TYPE.HOME}</button>
-            <button className="Button" onClick={() => onButtonClick(PAGE_TYPE.PROJECTS)}>{PAGE_TYPE.PROJECTS}</button>
-            <button className="Button" onClick={() => onButtonClick(PAGE_TYPE.ABOUT_ME)}>{PAGE_TYPE.ABOUT_ME}</button>
-        </div>
+        <header className="section header">
+            <img src="" alt="" />
+            <ul>
+                {pageTypeKeys.map(key => (
+                    <li key={PAGE_TYPE[key]}>
+                        <button className="Button" onClick={() => onButtonClick(PAGE_TYPE[key])}>{PAGE_TYPE[key]}</button>
+                    </li>
+                ))}
+            </ul>
+        </header>
     )
 }
 

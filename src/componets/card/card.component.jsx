@@ -3,7 +3,6 @@ import { IMAGES_PATH, LIST_TYPE } from "../../constantes";
 import { Bar } from "../";
 import "./card.css";
 
-//TODO: fazer que os card sejam variados consuante os tipo de objeto de entrada (jogo, programa, projeto, etc)
 function Card(props) {
     const { typeCard, objCard } = props;
 
@@ -45,20 +44,6 @@ function Card(props) {
                         </div>
                     </>
                 );
-            case LIST_TYPE.NOT_PROGRAMMING:
-                return(
-                    <>
-                        <img
-                            className="icon"
-                            src={process.env.PUBLIC_URL + IMAGES_PATH + objCard.icon}
-                            alt={`${objCard.name} Icon`}
-                        />
-                        <div className="text-content">
-                            <p className="name">{objCard.name}</p>
-                            <p className="skill">{objCard.skillLevel}</p>
-                        </div>
-                    </>
-                    );
             case LIST_TYPE.PROJECTS:
                 return(
                     <>
@@ -70,7 +55,7 @@ function Card(props) {
                         </a>
                     </>
                 );
-            //TODO: config this
+            //TODO: concluir a estrutura do card da os softwares
             case LIST_TYPE.SOFTWARE:
                 return(
                     <> 

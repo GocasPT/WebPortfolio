@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Escola Secundária Domingos Sequeira",
+        "acronym": "ESDS",
+        "educationLevel": "High School",
+        "educationAres": "Science and Technology",
+        "yearsStart": "2018",
+        "yearEnd": "2021"
+    },
+    {
+        "name": "Instituto Superior de Engenharia de Coimbra",
+        "acronym": "ISEC",
+        "educationLevel": "University ",
+        "educationAres": "Degree on Computer Engineering",
+        "yearsStart": "2021",
+        "yearEnd": "..."
+    }
+]

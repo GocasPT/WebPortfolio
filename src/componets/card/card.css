@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .card {
   position: relative;
   overflow: hidden;
@@ -9,6 +10,8 @@
   width: 30rem;
   border: 2px solid red;
   border-radius: 25px;
+  background-color: LightGray;
+  font-family: "Source Sans 3", sans-serif;
 }
 .card a {
   height: inherit;
@@ -19,6 +22,7 @@
 .card.game {
   height: 15rem;
   width: 40rem;
+  background-color: transparent;
 }
 .card.game .content {
   display: flex;
@@ -39,8 +43,6 @@
   font-size: 3rem;
   font-weight: bold;
   color: white;
-  /* height: 5em;
-  width: 100%; */
   margin: 1rem 0 0 0;
   text-align: center;
 }
@@ -68,6 +70,9 @@
   margin: 0;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+}
+.card.game:hover {
+  background-color: LightGray;
 }
 .card.game:hover .art {
   opacity: 0;
