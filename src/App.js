@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PAGE_TYPE } from "./constantes"
-import { Header, Page, Footer, } from "./componets"
+import { Header, Home, Projects, Experience, About, Footer, } from "./componets"
 import './assets/styles/App.css';
 
 function App() {
@@ -11,10 +11,18 @@ function App() {
     setPage(buttonValue);
   }
 
+  const pageComponentMapping = {
+    [PAGE_TYPE.HOME]: <Home />,
+    [PAGE_TYPE.PROJECTS]: <Projects />,
+    [PAGE_TYPE.EXPERIENCE]: <Experience />,
+    [PAGE_TYPE.ABOUT_ME]: <About />,
+  };
+  const componentToRender = pageComponentMapping[currentPage] || <Home />;
+
   return (
     <div className="App">
-      <Header onButtonClick={handleHeaderButton}/>
-      <Page type={currentPage}/>
+      <Header page={currentPage} onButtonClick={handleHeaderButton}/>
+      {componentToRender}
       <Footer/>
     </div>
   );

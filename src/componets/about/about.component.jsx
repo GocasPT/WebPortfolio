@@ -7,7 +7,7 @@ import "./about.css";
 function About() {
     return(
         <section className="about">
-            <h2>About</h2>
+            <h2>About me</h2>
             <div className="text-zon">
                 <p>Texto porque sim</p>
             </div>
@@ -23,7 +23,7 @@ function About() {
             </div>
             <div className={LIST_TYPE.GAME}>
                 <h3>Games</h3>
-                <div className={"card-grid " + LIST_TYPE.GAME}>
+                <div className={"medium-grid " + LIST_TYPE.GAME}>
                     {GAMES_LIST.map(obj => (
                         <Card key={obj.name} typeCard={LIST_TYPE.GAME} objCard={obj}/>
                     ))}

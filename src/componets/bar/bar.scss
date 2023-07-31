@@ -3,12 +3,12 @@
 .Bar {
     width: 100%;
     height: 15%;
-    background-color: variables.$background-ligth-color;
-    outline: 2px solid variables.$outline;
+    background-color: variables.$background;
+    outline: 2px solid variables.$accent;
     overflow: hidden;
 
     .Value {
         height: 100%;
-        background-color: variables.$primary-color;
+        background-color: variables.$primary;
     }
 }

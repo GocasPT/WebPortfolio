@@ -1,11 +1,13 @@
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillFacebook } from "react-icons/ai"
+
 export const WINDOWS_HEIGHT = window.innerHeight; 
 export const WINDOWS_WEIGHT = window.innerWidth;
 export const IMAGES_PATH = "/assets/images/";
 export const PAGE_TYPE = {
   HOME: "Home",
-  PROJECTS: "Projects",
   EXPERIENCE: "Experience",
-  ABOUT_ME: "About Me"
+  PROJECTS: "Projects",
+  ABOUT_ME: "About me"
 };
 export const LIST_TYPE = {
   EDUCATION: "education",
@@ -14,6 +16,12 @@ export const LIST_TYPE = {
   PROJECTS: "projects",
   SOFTWARE: "software"
 };
+export const SOCIAL_NETWORK_LIST = [
+  { name: "github", icon: <AiFillGithub/>, link: "https://github.com/GocasPT" },
+  { name: "linkdin", icon: <AiFillLinkedin/>, link: "https://www.linkedin.com/in/guilherme-camacho-67b5b2264/" },
+  { name: "instagram", icon: <AiFillInstagram/>, link: "https://www.instagram.com/camacho.gui/" },
+  { name: "facebook", icon: <AiFillFacebook/>, link: "https://www.facebook.com/guilherme.camacho.35380"}
+];
 
 //TODO: verificar os linsk (ser pt ou universal?)
 export { default as EDUCATION_LIST } from "./EducationList.json"

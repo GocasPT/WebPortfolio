@@ -1,7 +1,8 @@
 @use './variables';
 
 body {
-  background-color: variables.$background-color;
+  background-color: variables.$background;
+  color: variables.$text;
 }
 
 .App {
@@ -12,7 +13,66 @@ body {
 }
 
 .section {
-  background-color: variables.$background-dark-color;
-  color: white;
-  padding: 3em;
+  background-color: variables.$secondary;
+}
+
+.big-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  margin: 0 10%;
+
+  > * {
+      justify-self: center;
+  }
+
+  > *:nth-child(3n+1) {
+      grid-column: 1/3;   
+  }
+
+  > *:nth-child(3n-1) {
+      grid-column: 3/5;
+  }
+
+  > *:nth-child(3n) {
+      grid-column: 5/7;
+  }
+
+  > *:nth-child(3n+1):nth-last-of-type(2) {
+      grid-column: 2/4;
+  }
+
+  > *:nth-child(3n-1):nth-last-of-type(1) {
+      grid-column: 4/6;
+  }
+
+  > *:nth-child(3n+1):nth-last-of-type(1) {
+      grid-column: 3/5;
+  }
+}
+
+.medium-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  margin: 0 10%;
+
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 50%;
+
+  > * {
+      justify-self: center;
+  }
+
+  > *:nth-child(2n+1) {
+    grid-column: 1/2;
+  }
+
+  > *:nth-child(2n) {
+    grid-column: 2/3;
+  }
+
+  > *:nth-child(2n+1):nth-last-of-type(1) {
+    grid-column: 1/3;
+  }
 }

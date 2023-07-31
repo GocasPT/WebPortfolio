@@ -12,9 +12,9 @@
     margin: 10px;
     height: 10rem;
     width: 30rem;
-    border: 2px solid variables.$outline;
+    border: 2px solid variables.$accent;
     border-radius: 25px;
-    background-color: variables.$background-ligth-color;
+    background-color: variables.$secondary;
     font-family: variables.$source-sans;
 
     a {
@@ -82,7 +82,7 @@
         }
 
         &:hover {
-            background-color: variables.$background-ligth-color;
+            background-color: variables.$secondary;
 
             .art {
                 opacity: 0;
@@ -105,6 +105,10 @@
     &.projects {
         height: 15rem;
         width: 40rem;
+
+        .text-content {
+            height: 80%;
+        }
     }
 
     .icon {

@@ -1,26 +1,20 @@
 import React from "react";
-import { AiFillMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai"
-
+import { SOCIAL_NETWORK_LIST } from "../../constantes"
 import "./footer.css";
 
 function Footer() {
     return(
         <footer className="section footer">
-            <section className="contact">
-                <h2>Contact</h2>
-                <ul>
-                    <li>
-                        <AiFillMail/>
-                        <p>mail: guilherme.sousa.camacho@gmail.com</p>
-                    </li>
-                    <li>
-                        <AiFillLinkedin/>
-                        <p>linkdin: https://www.linkedin.com/in/guilherme-camacho-67b5b2264/</p>
-                    </li>
-                    <li>
-                        <AiFillGithub/>
-                        <p>github: https://github.com/GocasPT</p>
-                    </li>
+            <section className="social-media">
+                <h2>Socail Media</h2>
+                <ul className="social-media-list">
+                    {SOCIAL_NETWORK_LIST.map(obj => (
+                        <li key={obj.name}>
+                            <a href={obj.link} target="_blank" rel="author noreferrer">
+                                {obj.icon}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </section>
         </footer>

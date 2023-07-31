@@ -8,32 +8,4 @@
     .education {
 
     } */
-
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        justify-content: center;
-        margin: 0 10%;
-    
-        &.game {
-            grid-template-columns: repeat(2, 1fr);
-            margin: 0 50%;
-
-            > * {
-                justify-self: center;
-            }
-
-            > *:nth-child(2n+1) {
-                grid-column: 1/2;   
-            }
-        
-            > *:nth-child(2n) {
-                grid-column: 2/3;
-            }
-        
-            > *:nth-child(2n+1):nth-last-of-type(1) {
-                grid-column: 1/3;
-            }
-        }
-    }
 }

@@ -8,9 +8,9 @@
   margin: 10px;
   height: 10rem;
   width: 30rem;
-  border: 2px solid red;
+  border: 2px solid #8e5760;
   border-radius: 25px;
-  background-color: LightGray;
+  background-color: #100a0e;
   font-family: "Source Sans 3", sans-serif;
 }
 .card a {
@@ -72,7 +72,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 .card.game:hover {
-  background-color: LightGray;
+  background-color: #100a0e;
 }
 .card.game:hover .art {
   opacity: 0;
@@ -89,6 +89,9 @@
 .card.projects {
   height: 15rem;
   width: 40rem;
+}
+.card.projects .text-content {
+  height: 80%;
 }
 .card .icon {
   height: 75%;

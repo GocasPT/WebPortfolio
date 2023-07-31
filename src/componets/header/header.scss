@@ -1,5 +1,40 @@
 @use '../../assets/styles/variables';
 
-/* .header {
-    
-} */
+//TODO: aumentar o tamanho vertical
+.header {
+    height: 5em;
+    display: flex;
+    justify-content: center;
+
+    .buttons-list {
+        width: auto;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 1.5em 0;
+
+        li {
+            margin-right: 10px;
+
+            button {
+                background-color: variables.$secondary;
+                color: variables.$primary;
+                border: none;
+                border-radius: 0.4em;
+                cursor: pointer;
+                font-size: 2em;
+
+                &:hover:not(.on) {
+                    background-color: variables.$primary;
+                    color: variables.$secondary;
+                }
+            }
+
+            .on {
+                background-color: variables.$primary;
+                color: variables.$accent;
+                cursor: default;
+            }
+        }
+    }
+}

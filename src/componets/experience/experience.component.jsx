@@ -13,7 +13,7 @@ function Experience() {
             </div>
             <div className={LIST_TYPE.PROGRAMMING}>
                 <h3>Programming Language</h3>
-                <div className={"card-grid " + LIST_TYPE.PROGRAMMING}>
+                <div className={"big-grid " + LIST_TYPE.PROGRAMMING}>
                     {PROGRAMMING_LIST.map(obj => (
                         <Card key={obj.name} typeCard={LIST_TYPE.PROGRAMMING} objCard={obj}/>
                     ))}
@@ -21,7 +21,7 @@ function Experience() {
             </div>
             <div className={LIST_TYPE.SOFTWARE}>
                 <h3>Software Experience</h3>
-                <div className={"card-grid " + LIST_TYPE.SOFTWARE}>
+                <div className={"big-grid " + LIST_TYPE.SOFTWARE}>
                     {SOFTWARE_LIST.map(obj => (
                         <Card key={obj.name} typeCard={LIST_TYPE.SOFTWARE} objCard={obj}/>
                     ))}

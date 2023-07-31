@@ -1,10 +1,27 @@
 import React from "react";
+import { AiFillGoogleCircle, AiFillGithub, AiFillClockCircle } from "react-icons/ai";
 import { IMAGES_PATH, LIST_TYPE } from "../../constantes";
 import { Bar } from "../";
 import "./card.css";
 
 function Card(props) {
     const { typeCard, objCard } = props;
+
+    const iconComponent = (icon) => {
+        switch (icon) {
+            case "google":
+                return <AiFillGoogleCircle/>;
+
+            case "github":
+                return <AiFillGithub/>;
+            
+            case "loading":
+                return <AiFillClockCircle/>;
+            
+            default:
+                return <></>
+        }
+    };
 
     const renderCardContent  = () => {
         switch(typeCard) {
@@ -52,6 +69,7 @@ function Card(props) {
                                 <p className="name">{objCard.name}</p>
                                 <p className="description">{objCard.description}</p>
                             </div>
+                            {iconComponent(objCard.icon)}
                         </a>
                     </>
                 );

@@ -3,24 +3,24 @@
       "name": "Adobe Photoshop",
       "icon": "ICON_photosjop.png",
       "skillLevel": 8,
-      "url": "https://www.adobe.com/pt/products/photoshop.html"
+      "url": "https://www.adobe.com/products/photoshop.html"
     },
     {
       "name": "Adobe Premier Pro",
       "icon": "ICON_premierpro.png",
       "skillLevel": 7,
-      "url": "https://www.adobe.com/pt/products/premiere.html"
+      "url": "https://www.adobe.com/products/premiere.html"
     },
     {
       "name": "Adobe After Effects",
       "icon": "ICON_aftereffects.png",
       "skillLevel": 6,
-      "url": "https://www.adobe.com/pt/products/aftereffects.html"
+      "url": "https://www.adobe.com/products/aftereffects.html"
     },
     {
       "name": "Adobe Illustrator",
       "icon": "ICON_illustrator.png",
       "skillLevel": 5,
-      "url": "https://www.adobe.com/pt/products/illustrator.html"
+      "url": "https://www.adobe.com/products/illustrator.html"
     }
 ]
