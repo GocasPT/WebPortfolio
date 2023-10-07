@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { PAGE_TYPE } from "./constantes"
-import { Header, Home, Projects, Experience, About, Footer, } from "./componets"
+import { PAGE_TYPE } from "./data/constants"
+import { Navbar, Footer } from "./components"
+import { Home, Projects, Experience, Education, About } from "./pages"
 import './assets/styles/App.css';
 
 function App() {
-  //TODO: ver aquilo de quando mudar de pagina não bloquear a pagina quando carrega (video do youtube que explica isso)
   const [currentPage, setPage] = useState(PAGE_TYPE.HOME);
 
   const handleHeaderButton = (buttonValue) => {
@@ -13,15 +13,16 @@ function App() {
 
   const pageComponentMapping = {
     [PAGE_TYPE.HOME]: <Home />,
-    [PAGE_TYPE.PROJECTS]: <Projects />,
     [PAGE_TYPE.EXPERIENCE]: <Experience />,
+    [PAGE_TYPE.PROJECTS]: <Projects />,
+    [PAGE_TYPE.EDUCATION]: <Education />,
     [PAGE_TYPE.ABOUT_ME]: <About />,
   };
   const componentToRender = pageComponentMapping[currentPage] || <Home />;
 
   return (
     <div className="App">
-      <Header page={currentPage} onButtonClick={handleHeaderButton}/>
+      <Navbar page={currentPage} onButtonClick={handleHeaderButton}/>
       {componentToRender}
       <Footer/>
     </div>

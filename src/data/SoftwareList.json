@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Git",
+    "icon": "ICON_git.png",
+    "skillLevel": 8,
+    "url": "https://git-scm.com/"
+  },
+  {
+    "name": "Adobe Photoshop",
+    "icon": "ICON_photosjop.png",
+    "skillLevel": 8,
+    "url": "https://www.adobe.com/products/photoshop.html"
+  },
+  {
+    "name": "Adobe Illustrator",
+    "icon": "ICON_illustrator.png",
+    "skillLevel": 5,
+    "url": "https://www.adobe.com/products/illustrator.html"
+  },
+  {
+    "name": "Adobe Premier Pro",
+    "icon": "ICON_premierpro.png",
+    "skillLevel": 7,
+    "url": "https://www.adobe.com/products/premiere.html"
+  },
+  {
+    "name": "Adobe After Effects",
+    "icon": "ICON_aftereffects.png",
+    "skillLevel": 6,
+    "url": "https://www.adobe.com/products/aftereffects.html"
+  },
+  {
+    "name": "Audacity",
+    "icon": "ICON_audacity.png",
+    "skillLevel": 7,
+    "url": "https://www.audacityteam.org/"
+  },
+  {
+    "name": "Blender",
+    "icon": "ICON_blender.png",
+    "skillLevel": 7,
+    "url": "https://www.blender.org/"
+  },
+  {
+    "name": "Figma",
+    "icon": "ICON_figma.png",
+    "skillLevel": 4,
+    "url": "https://www.figma.com/"
+  },
+  {
+    "name": "Godot",
+    "icon": "ICON_godot.png",
+    "skillLevel": 0,
+    "url": "https://godotengine.org/"
+  }
+]

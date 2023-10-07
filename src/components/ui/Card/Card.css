@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  height: 10rem;
+  width: 30rem;
+  border: 2px solid #8e5760;
+  border-radius: 25px;
+  background-color: #100a0e;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.card a {
+  height: inherit;
+  width: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card.game {
+  height: 15rem;
+  width: 40rem;
+  background-color: transparent;
+}
+
+.card.game .content {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  height: inherit;
+  width: inherit;
+}
+
+.card.game .content .icon {
+  height: 50%;
+  width: auto;
+  margin: 0 2.5em;
+}
+
+.card.game .content .name {
+  flex: 1;
+  font-weight: 800;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+
+.card.game .art {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card.game .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card.game:hover {
+  background-color: #100a0e;
+}
+
+.card.game:hover .art {
+  opacity: 0;
+}
+
+.card.game:hover .icon {
+  opacity: 0;
+}
+
+.card.game:hover .name {
+  opacity: 0;
+}
+
+.card.game:hover .description {
+  opacity: 1;
+}
+
+.card.projects {
+  height: 15rem;
+  width: 40rem;
+}
+
+.card.projects .text-content {
+  height: 80%;
+}
+
+.card .icon {
+  height: 75%;
+  width: auto;
+  margin: 0 2.5em;
+}
+
+.card .text-content {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .text-content .name {
+  font-weight: 800;
+  font-size: 1.2rem;
+  height: 5em;
+  width: 100%;
+  margin: 1rem 0 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card .text-content .description {
+  font-weight: 500;
+  margin: 0;
+}
+
+.card .text-content .bar-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card .text-content .bar-content .skill {
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.card .text-content .bar-content .skill-value {
+  font-weight: 700;
+  margin: 0 1rem;
+  padding: 0 1em 0 0.5em;
+}
