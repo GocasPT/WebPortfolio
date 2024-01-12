@@ -1,12 +1,17 @@
+/*
 import React from "react";
 import { AiFillGoogleCircle, AiFillGithub, AiFillClockCircle } from "react-icons/ai";
 import { IMAGES_PATH, LIST_TYPE } from "../../../data/constants";
-import { Bar } from "../../";
+import { Bar } from "../..";
 import "./Card.css";
 
-function Card(props) {
-    const { typeCard, objCard } = props;
+interface CardProps = {
+    typeCard: string,
+    objCard: any
 
+}
+
+function Card( {typeCard, objCard} : CardProps) {
     const iconComponent = (icon) => {
         switch (icon) {
             case "google":
@@ -90,9 +95,9 @@ function Card(props) {
                                     <p className="skill-value">{objCard.skillLevel}</p>
                                 </div>
                             </div>
-                        {/* <a href={objCard.url} target="_blank" rel="author noreferrer">
+                        { <a href={objCard.url} target="_blank" rel="author noreferrer">
                            Link 
-                        </a> */}
+                        </a> }
                     </>
                 );
             default:
@@ -110,3 +115,4 @@ function Card(props) {
 }
 
 export default Card;
+*/
