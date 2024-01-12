@@ -1,26 +1,33 @@
-import React from "react";
-import { LIST_TYPE, PROJECTS_LIST } from "../../data/constants";
-import { findObjectByName } from "../../utils/findObjectByName";
-import { Card } from  "../../components";
-import "./Home.css";
+import { Clock, Computer, Github } from "lucide-react";
+import { Card } from "../../components";
+import { CardContent } from "../../components/Card/CardContent";
+import { CardIcon } from "../../components/Card/CardIcon";
 
-function Home() {
-    const topebotObject = findObjectByName("TopeBot", PROJECTS_LIST);
-    const the25gameObject = findObjectByName("The 25 Game", PROJECTS_LIST);
+export const Home = () => {
+  return (
+    <div>
+      <h1>
+        Hi, I'm Guilherme.
+        <br />
+        An software developer
+      </h1>
 
-    return(
-        <section className="home">
-            <h1>Hi, I’m Guilherme.<br/>An software developer</h1>
-            <h3>I am a person with limited experiences, but with a strong desire to learn and explore in the world of programming.</h3>
-            <div className="grid">
-                <Card typeCard={LIST_TYPE.PROJECTS} objCard={topebotObject}/>
-            </div>
-            <h1>In Process</h1>
-            <div className="grid">
-                <Card typeCard={LIST_TYPE.PROJECTS} objCard={the25gameObject}/>
-            </div>
-        </section>
-    )
-}
+      <h3>
+        I am a person with limited experiences, but with a strong desire to
+        learn and explore in the world of programming.
+      </h3>
 
-export default Home;
+      <Card.Root>
+        <CardContent text="Content" />
+        <CardIcon icon={Github} />
+      </Card.Root>
+
+      <h1>In progress</h1>
+
+      <Card.Root>
+        <CardContent text="In develop" />
+        <CardIcon icon={Clock} />
+      </Card.Root>
+    </div>
+  );
+};
