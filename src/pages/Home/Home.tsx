@@ -1,7 +1,8 @@
-import { Clock, Computer, Github } from "lucide-react";
+import { Clock, Github } from "lucide-react";
 import { Card } from "../../components";
 import { CardContent } from "../../components/Card/CardContent";
 import { CardIcon } from "../../components/Card/CardIcon";
+import ListaProjetos from "../../data/ProjectsList.json";
 
 export const Home = () => {
   return (
@@ -18,14 +19,14 @@ export const Home = () => {
       </h3>
 
       <Card.Root>
-        <CardContent text="Content" />
+        <CardContent text={ListaProjetos.Solo[0].description} />
         <CardIcon icon={Github} />
       </Card.Root>
 
       <h1>In progress</h1>
 
       <Card.Root>
-        <CardContent text="In develop" />
+        <CardContent text={ListaProjetos.Solo[1].description} />
         <CardIcon icon={Clock} />
       </Card.Root>
     </div>

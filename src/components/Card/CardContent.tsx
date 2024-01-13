@@ -8,7 +8,7 @@ interface CardContentProps {
 export const CardContent = ({ text }: CardContentProps) => {
   return (
     <div className="">
-      <h1>CardContent</h1>
+      <p>{text}</p>
     </div>
   );
 };
