@@ -23,7 +23,10 @@
     /* Project paths*/
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["*"],
+      "@/components/*": ["components/*"],
+      "@/pages/*": ["pages/*"],
+      "@/layouts/*": ["layouts/*"],
+      "@/data/*": ["data/*"],
     }
   },
   "include": ["src"],

@@ -1,6 +1,6 @@
-/* import { FaRegClock, FaGithub } from "react-icons/fa";
-import { Card } from "@components/Card";
-import ListaProjetos from "@data/ProjectsList.json"; */
+import { FaRegClock, FaGithub } from "react-icons/fa";
+import { Card } from "@/components/Card";
+import ListaProjetos from "@/data/ProjectsList.json";
 
 export const Home = () => {
   return (
@@ -16,7 +16,7 @@ export const Home = () => {
         learn and explore in the world of programming.
       </h3>
 
-      {/* <Card.Root>
+      <Card.Root>
         <Card.Content text={ListaProjetos.Solo[0].description} />
         <Card.Icon icon={FaGithub} />
       </Card.Root>
@@ -26,7 +26,7 @@ export const Home = () => {
       <Card.Root>
         <Card.Content text={ListaProjetos.Solo[1].description} />
         <Card.Icon icon={FaRegClock} />
-      </Card.Root> */}
+      </Card.Root>
     </div>
   );
 };
