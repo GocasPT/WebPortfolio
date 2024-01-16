@@ -1,0 +1,33 @@
+name: 'Build and Deploy'
+
+on:
+  push:
+    branchas:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        run: |
+          if [ -e "build" ]: then
+            npm run deploy
+          else
+            echo "Build stepo failed, canceling deploy..."
+          fi  
