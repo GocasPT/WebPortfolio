@@ -2,6 +2,8 @@ import { FaRegClock, FaGithub } from "react-icons/fa";
 import { Card } from "@/components/Card";
 import ListaProjetos from "@/data/ProjectsList.json";
 
+// TODO: Complete the html structure
+// TODO: Add styling
 export const Home = () => {
   return (
     <div>

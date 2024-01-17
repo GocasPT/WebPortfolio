@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+// TODO: Complete the html structure
+// TODO: Add styling
 export const Header = () => {
   return (
     <div>
