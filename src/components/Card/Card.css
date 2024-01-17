@@ -1,0 +1,52 @@
+.cardBorder {
+    border: 1px solid red;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    width: 11rem;
+}
+
+.image-container > img {
+    flex: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10rem;
+}
+
+.infoContainer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bar > * {
+    padding: 0.5rem;
+}
+
+.bar > :nth-child(2) {
+    width: 100%;
+}
+
+.bar > p {
+    font-weight: bold;
+}

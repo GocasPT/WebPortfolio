@@ -1,3 +1,5 @@
+import "./Card.css"
+
 interface CardTitleProps {
     text: string;
   }
@@ -6,7 +8,7 @@ interface CardTitleProps {
   // TODO: Add styling
   export const CardTitle = ({ text }: CardTitleProps) => {
     return (
-      <div className="">
+      <div className="title">
         <h2>{text}</h2>
       </div>
     );

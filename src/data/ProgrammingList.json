@@ -1,47 +1,61 @@
-[
-  {
-    "name": "C",
-    "icon": "ICON_c.png",
-    "skillLevel": 9
-  },
-  {
-    "name": "C++",
-    "icon": "ICON_cplusplus.png",
-    "skillLevel": 7
-  },
-  {
-    "name": "C#",
-    "icon": "ICON_csharp.png",
-    "skillLevel": 6
-  },
-  {
-    "name": "Java",
-    "icon": "ICON_java.png",
-    "skillLevel": 7
-  },
-  {
-    "name": "JavaFX",
-    "icon": "ICON_javafx.png",
-    "skillLevel": 7
-  },
-  {
-    "name": "JavaScript",
-    "icon": "ICON_javascrip.png",
-    "skillLevel": 9
-  },
-  {
-    "name": "React",
-    "icon": "ICON_react.png",
-    "skillLevel": 8
-  },
-  {
-    "name": "Python",
-    "icon": "ICON_python.png",
-    "skillLevel": 5
-  },
-  {
-    "name": "Oracle SQL",
-    "icon": "ICON_oracleSQL.png",
-    "skillLevel": 5
-  }
-]
+{
+  "Languagues": [
+    {
+      "name": "C",
+      "icon": "ICON_c.png",
+      "skillLevel": 9
+    },
+    {
+      "name": "C++",
+      "icon": "ICON_cplusplus.png",
+      "skillLevel": 8
+    },
+    {
+      "name": "C#",
+      "icon": "ICON_csharp.png",
+      "skillLevel": 7
+    },
+    {
+      "name": "Java",
+      "icon": "ICON_java.png",
+      "skillLevel": 7
+    },
+    {
+      "name": "JavaScript",
+      "icon": "ICON_javascrip.png",
+      "skillLevel": 9
+    },
+    {
+      "name": "TypeScript",
+      "icon": "ICON_typescrip.png",
+      "skillLevel": 6
+    },
+    {
+      "name": "Python",
+      "icon": "ICON_python.png",
+      "skillLevel": 6
+    },
+    {
+      "name": "Oracle SQL",
+      "icon": "ICON_oracleSQL.png",
+      "skillLevel": 6
+    }
+  ],
+  "Frameworks": [
+    {
+      "name": "JavaFX",
+      "icon": "ICON_javafx.png",
+      "skillLevel": 7
+    },
+    {
+      "name": "React",
+      "icon": "ICON_react.png",
+      "skillLevel": 8
+    },
+    {
+      "name": "ASP.NET Core 6.0",
+      "icon": "ICON_aspnetcore.png",
+      "skillLevel": 6
+    }
+  ]
+}

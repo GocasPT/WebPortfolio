@@ -1,3 +1,5 @@
+import "./Card.css"
+
 interface CardContentProps {
   text: string;
 }
@@ -6,8 +8,8 @@ interface CardContentProps {
 // TODO: Add styling
 export const CardContent = ({ text }: CardContentProps) => {
   return (
-    <div className="">
-      <p>{text}</p>
+    <div className="content-container">
+      <p className="content">{text}</p>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import "./Card.css"
 
 interface CardRootProps {
   children: ReactNode;
@@ -9,8 +10,7 @@ interface CardRootProps {
 // TODO: Add component click event (popup to show more detail)
 export const CardRoot = ({ children }: CardRootProps) => {
   return (
-    <div className="">
-      <h1>CardRoot</h1>
+    <div className="cardBorder">
       {children}
     </div>
   );
