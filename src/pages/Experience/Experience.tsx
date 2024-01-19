@@ -16,13 +16,15 @@ export const Experience = () => {
       <ul className='autolayout'>
         {PROGRAMMING_LIST.Languagues.map((item) => {
           return (
-            <Card.Root>
-              <Card.Image image={item.icon}/>
-              <div className='infoContainer'>
-                <Card.Title text={item.name}/>
-                <Card.Bar value={item.skillLevel}/>
-              </div>
-            </Card.Root>
+            <li>
+              <Card.Root>
+                <Card.Image image={item.icon}/>
+                <div className='infoContainer'>
+                  <Card.Title text={item.name}/>
+                  <Card.Bar value={item.skillLevel}/>
+                </div>
+              </Card.Root>
+            </li>
           )
         })}
       </ul>
@@ -30,13 +32,15 @@ export const Experience = () => {
       <ul className='autolayout'>
         {PROGRAMMING_LIST.Frameworks.map((item) => {
           return (
-            <Card.Root>
-              <Card.Image image={item.icon}/>
-              <div className='infoContainer'>
-                <Card.Title text={item.name}/>
-                <Card.Bar value={item.skillLevel}/>
-              </div>
-            </Card.Root>
+            <li>
+              <Card.Root>
+                <Card.Image image={item.icon}/>
+                <div className='infoContainer'>
+                  <Card.Title text={item.name}/>
+                  <Card.Bar value={item.skillLevel}/>
+                </div>
+              </Card.Root>
+            </li>
           )
         })}
       </ul>
@@ -44,13 +48,15 @@ export const Experience = () => {
       <ul className='autolayout'>
         {SOFTWARE_LIST.map((item) => {
           return (
-            <Card.Root>
-              <Card.Image image={item.icon}/>
-              <div className='infoContainer'>
-                <Card.Title text={item.name}/>
-                <Card.Bar value={item.skillLevel}/>
-              </div>
-            </Card.Root>
+            <li>
+                <Card.Root>
+                <Card.Image image={item.icon}/>
+                <div className='infoContainer'>
+                  <Card.Title text={item.name}/>
+                  <Card.Bar value={item.skillLevel}/>
+                </div>
+              </Card.Root>
+            </li>
           )
         })}
       </ul>

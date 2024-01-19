@@ -1,4 +1,4 @@
-.cardBorder {
+.card {
     border: 1px solid red;
     border-radius: 25px;
     display: flex;
@@ -6,6 +6,14 @@
     width: 30rem;
     gap: 1rem;
     padding: 1rem;
+
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.card.bigger {
+    width: 40rem;
 }
 
 .image-container {
@@ -51,21 +59,18 @@
     font-weight: bold;
 }
 
+/*TODO: corrigir amanho das imagens*/
 .card-background {
-    width: inherit;
-    height: inherit;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
 }
 
-/*TODO: backgoun on the card, no the site*/
-.card-background > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;
-    width: 50%;
-    opacity: 1;
-    z-index: -1;
-    /* transition: opacity 0.3s ease-in-out; */
+.card:hover > .card-background {
+    opacity: 0;
 }
 
 /*TODO: media query phone*/

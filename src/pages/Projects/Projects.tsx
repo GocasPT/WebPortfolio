@@ -16,13 +16,15 @@ export const Projects = () => {
       <ul className="autolayout">
         {ProjectsList.Group.map((item) => {
           return (
-            <Card.Root>
-              <div className="infoContainer">
-                <Card.Title text={item.name}/>
-                <Card.Content text={item.description}/>
-                <Card.Icon icon={IconComponent(item.icon)} />
-              </div>
-            </Card.Root>
+            <a href={item.url} target="_blank">
+              <Card.Root>
+                <div className="infoContainer">
+                  <Card.Title text={item.name}/>
+                  <Card.Content text={item.description}/>
+                  <Card.Icon icon={IconComponent(item.icon)} />
+                </div>
+              </Card.Root>
+            </a>
           )
         })}
       </ul>
@@ -30,13 +32,15 @@ export const Projects = () => {
       <ul className="autolayout">
         {ProjectsList.Solo.map((item) => {
           return (
-            <Card.Root>
-              <div className="infoContainer">
-                <Card.Title text={item.name}/>
-                <Card.Content text={item.description}/>
-                <Card.Icon icon={IconComponent(item.icon)} />
-              </div>
-            </Card.Root>
+            <a href={item.url} target="_blank">
+              <Card.Root>
+                <div className="infoContainer">
+                  <Card.Title text={item.name}/>
+                  <Card.Content text={item.description}/>
+                  <Card.Icon icon={IconComponent(item.icon)} />
+                </div>
+              </Card.Root>
+            </a>
           )
         })}
       </ul>
