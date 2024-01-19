@@ -17,7 +17,7 @@ export const Experience = () => {
         {PROGRAMMING_LIST.Languagues.map((item) => {
           return (
             <Card.Root>
-              <Card.Image image={`./src/assets/images/${item.icon}`}/>
+              <Card.Image image={item.icon}/>
               <div className='infoContainer'>
                 <Card.Title text={item.name}/>
                 <Card.Bar value={item.skillLevel}/>
@@ -31,7 +31,7 @@ export const Experience = () => {
         {PROGRAMMING_LIST.Frameworks.map((item) => {
           return (
             <Card.Root>
-              <Card.Image image={`./src/assets/images/${item.icon}`}/>
+              <Card.Image image={item.icon}/>
               <div className='infoContainer'>
                 <Card.Title text={item.name}/>
                 <Card.Bar value={item.skillLevel}/>
@@ -45,7 +45,7 @@ export const Experience = () => {
         {SOFTWARE_LIST.map((item) => {
           return (
             <Card.Root>
-              <Card.Image image={`./src/assets/images/${item.icon}`}/>
+              <Card.Image image={item.icon}/>
               <div className='infoContainer'>
                 <Card.Title text={item.name}/>
                 <Card.Bar value={item.skillLevel}/>

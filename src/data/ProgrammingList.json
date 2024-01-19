@@ -2,59 +2,59 @@
   "Languagues": [
     {
       "name": "C",
-      "icon": "ICON_c.png",
+      "icon": "https://cdn.icon-icons.com/icons2/2415/PNG/512/c_original_logo_icon_146611.png",
       "skillLevel": 9
     },
     {
       "name": "C++",
-      "icon": "ICON_cplusplus.png",
+      "icon": "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
       "skillLevel": 8
     },
     {
       "name": "C#",
-      "icon": "ICON_csharp.png",
+      "icon": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png",
       "skillLevel": 7
     },
     {
       "name": "Java",
-      "icon": "ICON_java.png",
+      "icon": "https://cdn.iconscout.com/icon/free/png-256/free-java-60-1174953.png",
       "skillLevel": 7
     },
     {
       "name": "JavaScript",
-      "icon": "ICON_javascrip.png",
+      "icon": "https://static-00.iconduck.com/assets.00/javascript-js-icon-2048x2048-nyxvtvk0.png",
       "skillLevel": 9
     },
     {
       "name": "TypeScript",
-      "icon": "ICON_typescrip.png",
+      "icon": "https://static-00.iconduck.com/assets.00/typescript-icon-icon-1024x1024-vh3pfez8.png",
       "skillLevel": 6
     },
     {
       "name": "Python",
-      "icon": "ICON_python.png",
+      "icon": "https://static-00.iconduck.com/assets.00/python-icon-512x512-48og66bp.png",
       "skillLevel": 6
     },
     {
-      "name": "Oracle SQL",
-      "icon": "ICON_oracleSQL.png",
+      "name": "SQL",
+      "icon": "https://www.freeiconspng.com/uploads/sql-server-icon-png-28.png",
       "skillLevel": 6
     }
   ],
   "Frameworks": [
     {
       "name": "JavaFX",
-      "icon": "ICON_javafx.png",
+      "icon": "https://www.qfs.de/fileadmin/Webdata/logos-icons/JavaFX.png",
       "skillLevel": 7
     },
     {
       "name": "React",
-      "icon": "ICON_react.png",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png",
       "skillLevel": 8
     },
     {
       "name": "ASP.NET Core 6.0",
-      "icon": "ICON_aspnetcore.png",
+      "icon": "https://i0.wp.com/thecodeblogger.com/wp-content/uploads/2019/03/netcore-268-268.png?fit=268%2C266&ssl=1",
       "skillLevel": 6
     }
   ]

@@ -4,6 +4,7 @@ import { CardContent } from "./CardContent";
 import { CardTitle } from "./CardTitle"
 import { CardImage } from "./CardImage";
 import { CardBar } from "./CardBar"
+import { CardBackground } from "./CardBackground";
 
 export const Card = {
   Root: CardRoot,
@@ -12,4 +13,5 @@ export const Card = {
   Title: CardTitle,
   Bar: CardBar,
   Content: CardContent,
+  Background: CardBackground
 };
