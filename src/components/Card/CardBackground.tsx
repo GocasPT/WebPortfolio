@@ -5,7 +5,7 @@ interface CardBackgroundProps {
 // TODO: Add styling
 export const CardBackground = ({ image }: CardBackgroundProps) => {
     return (
-        <div className={`background`}>
+        <div className="card-background">
             <img src={image} />
         </div>
     );

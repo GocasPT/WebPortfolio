@@ -51,4 +51,21 @@
     font-weight: bold;
 }
 
+.card-background {
+    width: inherit;
+    height: inherit;
+}
+
+/*TODO: backgoun on the card, no the site*/
+.card-background > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+    opacity: 1;
+    z-index: -1;
+    /* transition: opacity 0.3s ease-in-out; */
+}
+
 /*TODO: media query phone*/

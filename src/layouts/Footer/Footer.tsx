@@ -1,26 +1,24 @@
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa6";
-import { AiFillInstagram } from "react-icons/ai";
+import { IconComponent } from "@/utils/IconComponent";
+import Socials from "@/data/SocialLinks.json";
+import "@/assets/Footer.css"
 
 // TODO: Complete the html structure
 // TODO: Add styling
 export const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
-      <h2>Social Media</h2>
-      <ul>
-        <li>
-          <FaGithub />
-        </li>
-        <li>
-          <FaLinkedin />
-        </li>
-        <li>
-          <AiFillInstagram />
-        </li>
-        <li>
-          <FaFacebook />
-        </li>
+    <div className="footer">
+      <h2 className="title">Social Media</h2>
+      <ul className="list">
+        {Socials.map((social) => {
+          const IconRender = IconComponent(social.name);
+          return (
+            <li key={social.name}>
+              <a href={social.link} target="_blanck">
+                <IconRender />
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

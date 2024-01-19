@@ -1,18 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./assets/App.css";
 import { Header, Footer } from "./layouts";
-import { Home, Experience, Projects, Education, AboutMe } from "./pages";
+import { Pages } from "./pages";
+import "./assets/App.css";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/WebPortfolio/" Component={Home} />
-        <Route path="/WebPortfolio/Experience" Component={Experience} />
-        <Route path="/WebPortfolio/Projects" Component={Projects} />
-        <Route path="/WebPortfolio/Education" Component={Education} />
-        <Route path="/WebPortfolio/AboutMe" Component={AboutMe} />
+        {Pages.map((page) => {
+          return (
+            <Route path={page.path} element={
+              <div id='content-wrap'>
+                <page.component />
+              </div>
+            } />
+          );
+        })}
       </Routes>
       <Footer />
     </BrowserRouter>

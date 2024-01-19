@@ -2,16 +2,10 @@ import { ElementType } from "react";
 import "./Card.css"
 
 interface CardIconProps {
-  icon: ElementType;
-  link: string;
+  icon: ElementType
 }
-
 // TODO: Complete the html structure
 // TODO: Add styling
-export const CardIcon = ({ icon: Icon, link }: CardIconProps) => {
-  return (
-    <a href={link}>
-      <Icon className="icon" />
-    </a>
-  );
+export const CardIcon = ({ icon: Icon }: CardIconProps) => {
+  return <Icon className="icon" />
 };

@@ -1,6 +1,8 @@
-import PROJECTS_LIST from "@/data/ProjectsList.json"
 import { Card } from "@/components/Card"
+import { IconComponent } from "@/utils/IconComponent";
+import ProjectsList from "@/data/ProjectsList.json"
 import "@/assets/Projects.css"
+
 
 // TODO: Complete the html structure
 // TODO: Add styling
@@ -12,12 +14,13 @@ export const Projects = () => {
       <p className='text'>Texto porque sim</p>
       <h2 className="title">Group</h2>
       <ul className="autolayout">
-        {PROJECTS_LIST.Group.map((item) => {
+        {ProjectsList.Group.map((item) => {
           return (
             <Card.Root>
               <div className="infoContainer">
                 <Card.Title text={item.name}/>
                 <Card.Content text={item.description}/>
+                <Card.Icon icon={IconComponent(item.icon)} />
               </div>
             </Card.Root>
           )
@@ -25,12 +28,13 @@ export const Projects = () => {
       </ul>
       <h2 className="title">Solo</h2>
       <ul className="autolayout">
-        {PROJECTS_LIST.Solo.map((item) => {
+        {ProjectsList.Solo.map((item) => {
           return (
             <Card.Root>
               <div className="infoContainer">
                 <Card.Title text={item.name}/>
                 <Card.Content text={item.description}/>
+                <Card.Icon icon={IconComponent(item.icon)} />
               </div>
             </Card.Root>
           )

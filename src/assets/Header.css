@@ -1,0 +1,26 @@
+.header {
+    background-color: red;
+}
+
+/*TODO: move to App.css*/
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list > * {
+    padding: 0.25rem;
+    margin: 0.5rem 0.25rem;
+}
+
+/*TODO: on page → color button*/
+.list a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}

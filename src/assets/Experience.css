@@ -1,3 +1,4 @@
+/*TODO: move this*/
 .title {
     font-weight: bolder;
     font-size: large;
@@ -7,6 +8,7 @@
 .text {
     text-align: center;
 }
+
 
 .autolayout {
     display: flex;
