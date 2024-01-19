@@ -2,7 +2,7 @@
   "name": "web-portfolio",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gocaspt.github.io/WebPortfolio",
+  "homepage": "https://gocaspt.github.io/WebPortfolio/Home",
   "type": "module",
   "scripts": {
     "dev": "vite --open",

@@ -16,15 +16,15 @@ export const Projects = () => {
       <ul className="autolayout">
         {ProjectsList.Group.map((item) => {
           return (
-            <a key={item.name} href={item.url} target="_blank">
-              <Card.Root median>
+            <li key={item.name}>
+              <Card.Root median link={item.url}>
                 <Card.Group>
                   <Card.Title text={item.name}/>
                   <Card.Content text={item.description}/>
                   <Card.Icon icon={IconComponent(item.icon)} />
                 </Card.Group>
               </Card.Root>
-            </a>
+            </li>
           )
         })}
       </ul>
@@ -32,15 +32,15 @@ export const Projects = () => {
       <ul className="autolayout">
         {ProjectsList.Solo.map((item) => {
           return (
-            <a key={item.name} href={item.url} target="_blank">
-              <Card.Root>
+            <li key={item.name}>
+              <Card.Root link={item.url}>
                 <Card.Group>
                   <Card.Title text={item.name}/>
                   <Card.Content text={item.description}/>
                   <Card.Icon icon={IconComponent(item.icon)} />
                 </Card.Group>
               </Card.Root>
-            </a>
+            </li>
           )
         })}
       </ul>

@@ -52,5 +52,11 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg",
     "skillLevel": 0,
     "url": "https://godotengine.org/"
+  },
+  {
+    "name": "Notion",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Notion_app_logo.png/600px-Notion_app_logo.png",
+    "skillLevel": 7,
+    "url": "https://www.notion.so/"
   }
 ]

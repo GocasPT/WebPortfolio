@@ -6,7 +6,7 @@ interface CardGroupProps {
 
 export const CardGroup = ({ children }: CardGroupProps) => {
     return (
-        <div className="card-content">
+        <div className="card-group">
             {children}
         </div>
     );

@@ -18,19 +18,19 @@ export const Home = () => {
       </h3>
 
       <div className="autolayout">
-        <Card.Root median>
-          <Card.Group>
-            <Card.Title text={ListaProjetos.Group[0].name} />
-            <Card.Content text={ListaProjetos.Group[0].description} />
-            <Card.Icon icon={IconComponent(ListaProjetos.Solo[0].icon)} />
-          </Card.Group>
-        </Card.Root>
+          <Card.Root median link={ListaProjetos.Group[0].url}>
+            <Card.Group>
+              <Card.Title text={ListaProjetos.Group[0].name} />
+              <Card.Content text={ListaProjetos.Group[0].description} />
+              <Card.Icon icon={IconComponent(ListaProjetos.Solo[0].icon)} />
+            </Card.Group>
+          </Card.Root>
       </div>
 
       <h1 className="title">In progress</h1>
 
       <div className="autolayout">
-        <Card.Root>
+      <Card.Root>
           <Card.Group>
             <Card.Title text={ListaProjetos.Solo[1].name} />
             <Card.Content text={ListaProjetos.Solo[1].description} />
