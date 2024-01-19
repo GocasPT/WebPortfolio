@@ -16,13 +16,13 @@ export const Experience = () => {
       <ul className='autolayout'>
         {PROGRAMMING_LIST.Languagues.map((item) => {
           return (
-            <li>
+            <li key={item.name}>
               <Card.Root>
                 <Card.Image image={item.icon}/>
-                <div className='infoContainer'>
+                <Card.Group>
                   <Card.Title text={item.name}/>
                   <Card.Bar value={item.skillLevel}/>
-                </div>
+                </Card.Group>
               </Card.Root>
             </li>
           )
@@ -32,13 +32,13 @@ export const Experience = () => {
       <ul className='autolayout'>
         {PROGRAMMING_LIST.Frameworks.map((item) => {
           return (
-            <li>
+            <li key={item.name}>
               <Card.Root>
                 <Card.Image image={item.icon}/>
-                <div className='infoContainer'>
+                <Card.Group>
                   <Card.Title text={item.name}/>
                   <Card.Bar value={item.skillLevel}/>
-                </div>
+                </Card.Group>
               </Card.Root>
             </li>
           )
@@ -48,13 +48,13 @@ export const Experience = () => {
       <ul className='autolayout'>
         {SOFTWARE_LIST.map((item) => {
           return (
-            <li>
+            <li key={item.name}>
                 <Card.Root>
                 <Card.Image image={item.icon}/>
-                <div className='infoContainer'>
+                <Card.Group>
                   <Card.Title text={item.name}/>
                   <Card.Bar value={item.skillLevel}/>
-                </div>
+                </Card.Group>
               </Card.Root>
             </li>
           )

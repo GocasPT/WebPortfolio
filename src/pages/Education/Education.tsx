@@ -9,7 +9,7 @@ export const Education = () => {
 
       {EducatiobList.map((item) => {
         return (
-          <div>
+          <div key={item.name}>
             <p>{item.name}</p>
             <p>{item.educationAres}</p>
             <p>{item.yearsStart} to {item.yearEnd}</p>

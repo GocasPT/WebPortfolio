@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Btn } from "@/components/Button";
 import { Pages } from "@/pages";
 import "@/assets/Header.css"
@@ -11,12 +11,17 @@ export const Header = () => {
       <ul className="list">
         {Pages.map((page) => {
           return (
-            <li>
-              <Link to={page.path}>
+            <li key={page.name}>
+              <NavLink
+                to={page.path}
+                className={({ isActive}) => 
+                  isActive ? "active-link" : ""
+                }
+              >
                 <Btn.Root>
                   <Btn.Text text={page.name} />
                 </Btn.Root>
-              </Link>
+              </NavLink>
             </li>
           );
         })}

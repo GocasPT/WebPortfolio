@@ -2,7 +2,7 @@
     "Group": [
       {
         "name": "CanSat",
-        "description": "CanSat is a miniature satellite in a can-sized package, offering hands-on learning in aerospace engineering and space science. With sensors and communication systems, it conducts scientific experiments during a controlled descent from high altitudes. This educational tool inspires students and enthusiasts alike to explore the realms of space technology and fosters practical skills and knowledge in a challenging and rewarding way.",
+        "description": "CanSat: Educational project where students design, build, and launch a small satellite housed in a soda-can-sized container. Typically used in STEM programs, CanSats provide hands-on experience in satellite development, telemetry, and data analysis. Aiming to inspire future engineers and scientists, CanSats offer a practical introduction to the principles of aerospace engineering.",
         "icon": "Google",
         "url": "https://www.esero.pt/projetos-escolares/2022-2023/cansatpt"
       }
@@ -10,7 +10,7 @@
     "Solo": [
       {
         "name": "TopeBot",
-        "description": "A Discord bot powered by Discord.js is a dynamic AI companion for Discord servers. Utilizing the Discord API, this bot can be customized to perform various tasks, from moderating and playing music to providing real-time information. With flexibility and functionality at its core, Discord.js bots enhance Discord communities with ease and excitement.",
+        "description": "Discord bot with many features. In develop...",
         "icon": "Github",
         "url": "https://github.com/GocasPT/TopeBot-Discord.js"
       },

@@ -13,15 +13,15 @@ export const AboutMe = () => {
       <ul className="autolayout">
       {GamesList.map((item) => {
         return (
-          <li>
+          <li key={item.name}>
             <a href={item.url} target="_blank">
-              <Card.Root className='bigger'>
-                <Card.Background image={item.art}/>
+              <Card.Root bigger>
                 <Card.Image image={item.icon} />
-                <div className="infoContainer">
+                <Card.Group>
                   <Card.Title text={item.name} />
                   <Card.Content text={item.description}/>
-                </div>
+                </Card.Group>
+                <Card.Background image={item.art}/>
               </Card.Root>
             </a>
           </li>

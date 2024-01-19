@@ -1,17 +1,19 @@
 import { CardRoot } from "./CardRoot";
-import { CardIcon } from "./CardIcon";
-import { CardContent } from "./CardContent";
-import { CardTitle } from "./CardTitle"
-import { CardImage } from "./CardImage";
-import { CardBar } from "./CardBar"
 import { CardBackground } from "./CardBackground";
+import { CardIcon } from "./CardIcon";
+import { CardImage } from "./CardImage";
+import { CardGroup } from "./CardGroup";
+import { CardTitle } from "./CardTitle"
+import { CardContent } from "./CardContent";
+import { CardBar } from "./CardBar"
 
 export const Card = {
   Root: CardRoot,
+  Background: CardBackground,
   Icon: CardIcon,
   Image: CardImage,
+  Group: CardGroup,
   Title: CardTitle,
-  Bar: CardBar,
   Content: CardContent,
-  Background: CardBackground
+  Bar: CardBar,
 };

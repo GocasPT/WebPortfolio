@@ -20,27 +20,27 @@ interface Page {
 
 const Pages: Page[] = [
     {
-        path: "/WebPortfolio/",
+        path: "/WebPortfolio/Home",
         name: PageNames.Home,
         component: Home,
     },
     {
-        path: "/WebPortfolio/experience",
+        path: "/WebPortfolio/Experience",
         name: PageNames.Experience,
         component: Experience,
     },
     {
-        path: "/WebPortfolio/projects",
+        path: "/WebPortfolio/Projects",
         name: PageNames.Projects,
         component: Projects,
     },
     {
-        path: "/WebPortfolio/education",
+        path: "/WebPortfolio/Education",
         name: PageNames.Education,
         component: Education,
     },
     {
-        path: "/WebPortfolio/aboutme",
+        path: "/WebPortfolio/AboutMe",
         name: PageNames.AboutMe,
         component: AboutMe,
     },

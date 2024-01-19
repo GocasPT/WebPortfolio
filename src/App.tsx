@@ -10,7 +10,7 @@ function App() {
       <Routes>
         {Pages.map((page) => {
           return (
-            <Route path={page.path} element={
+            <Route key={page.path} path={page.path} element={
               <div id='content-wrap'>
                 <page.component />
               </div>

@@ -2,16 +2,14 @@ import { ReactNode } from "react";
 import "./Card.css"
 
 interface CardRootProps {
-  className?: string;
+  bigger?: boolean;
+  median?: boolean;
   children: ReactNode;
 }
 
-// TODO: Complete the html structure
-// TODO: Add styling
-// TODO: Add component click event (popup to show more detail)
-export const CardRoot = ({ className, children }: CardRootProps) => {
+export const CardRoot = ({ bigger = false, median = false, children }: CardRootProps) => {
   return (
-    <div className={`card ${className}`}>
+    <div className={`card ${ median ? "median " : ""} ${ bigger ? "bigger " : ""}`}>
       {children}
     </div>
   );

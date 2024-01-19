@@ -2,9 +2,6 @@ import { Card } from "@/components/Card";
 import { IconComponent } from "@/utils/IconComponent";
 import ListaProjetos from "@/data/ProjectsList.json";
 
-// TODO: Complete the html structure
-// TODO: Add styling
-// TODO: icons (JSON string → ElementType)
 export const Home = () => {
   return (
     <div>
@@ -21,12 +18,12 @@ export const Home = () => {
       </h3>
 
       <div className="autolayout">
-        <Card.Root>
-          <div className="infoContainer">
+        <Card.Root median>
+          <Card.Group>
             <Card.Title text={ListaProjetos.Group[0].name} />
-            <Card.Content text={ListaProjetos.Solo[0].description} />
+            <Card.Content text={ListaProjetos.Group[0].description} />
             <Card.Icon icon={IconComponent(ListaProjetos.Solo[0].icon)} />
-          </div>
+          </Card.Group>
         </Card.Root>
       </div>
 
@@ -34,11 +31,11 @@ export const Home = () => {
 
       <div className="autolayout">
         <Card.Root>
-          <div className="infoContainer">
+          <Card.Group>
             <Card.Title text={ListaProjetos.Solo[1].name} />
             <Card.Content text={ListaProjetos.Solo[1].description} />
             <Card.Icon icon={IconComponent(ListaProjetos.Solo[1].icon)} />
-          </div>
+          </Card.Group>
         </Card.Root>
       </div>
     </div>
