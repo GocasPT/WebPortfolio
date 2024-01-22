@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter , Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./layouts";
 import { Pages } from "./pages";
 import "./assets/App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
           {Pages.map((page) => {
@@ -17,7 +17,7 @@ function App() {
           })}
         </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
