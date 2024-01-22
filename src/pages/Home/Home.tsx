@@ -13,30 +13,37 @@ export const Home = () => {
 
       {/*TODO: style title text (second title)*/}
       <h3 className="title">
-        I am a person with limited experiences, but with a strong desire to
-        learn and explore in the world of programming.
+        I am a person with limited experiences, but with a strong desire to learn and explore in the world of programming.
       </h3>
 
       <div className="autolayout">
-          <Card.Root median link={ListaProjetos.Group[0].url}>
-            <Card.Group>
-              <Card.Title text={ListaProjetos.Group[0].name} />
-              <Card.Content text={ListaProjetos.Group[0].description} />
-              <Card.Icon icon={IconComponent(ListaProjetos.Solo[0].icon)} />
-            </Card.Group>
-          </Card.Root>
+        {ListaProjetos.Solo.map((project) => (
+          project.done && project.highlight && (
+            <Card.Root median link={project.url}>
+              <Card.Group>
+                <Card.Title text={project.name} />
+                <Card.Content text={project.description} />
+                <Card.Icon icon={IconComponent(project.icon)} />
+              </Card.Group>
+            </Card.Root>
+          )
+        ))}
       </div>
 
-      <h1 className="title">In progress</h1>
+      <h2 className="title">In progress</h2>
 
       <div className="autolayout">
-      <Card.Root>
-          <Card.Group>
-            <Card.Title text={ListaProjetos.Solo[1].name} />
-            <Card.Content text={ListaProjetos.Solo[1].description} />
-            <Card.Icon icon={IconComponent(ListaProjetos.Solo[1].icon)} />
-          </Card.Group>
-        </Card.Root>
+        {ListaProjetos.Solo.map((project) => (
+          !project.done && project.highlight && (
+            <Card.Root median link={project.url}>
+              <Card.Group>
+                <Card.Title text={project.name} />
+                <Card.Content text={project.description} />
+                <Card.Icon icon={IconComponent(project.icon)} />
+              </Card.Group>
+            </Card.Root>
+          )
+        ))}
       </div>
     </div>
   );

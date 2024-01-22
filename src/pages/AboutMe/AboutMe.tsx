@@ -7,9 +7,11 @@ import "@/assets/AboutMe.css"
 export const AboutMe = () => {
   return (
     <div>
-      <h1 className="title">About Me</h1>
-      <p>Texto porque sim</p>
-      <h2 className="title">Games</h2>
+      <h2 className="title">About Me</h2>
+
+      <p className="text">Texto porque sim</p>
+
+      <h3 className="title">Games</h3>
       <ul className="autolayout">
       {GamesList.map((item) => {
         return (

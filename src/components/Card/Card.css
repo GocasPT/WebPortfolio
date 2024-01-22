@@ -1,8 +1,8 @@
 .card {
     position: relative;
-    background-color: transparent;
+    background-color: var(--gray);
     overflow: hidden;
-    border: 1px solid red;
+    border: 1px solid var(--red);
     border-radius: 25px;
     box-shadow: 0 0 0.7rem;
     height: 10rem;
@@ -39,8 +39,8 @@
 
 /*TODO: fade in and fade out*/
 .card:hover > .card-background {
-    opacity: 10%;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 5%;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .card-group {

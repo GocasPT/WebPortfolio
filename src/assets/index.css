@@ -1,3 +1,11 @@
+:root {
+  --red: #D93D4A;
+  --blue-light: #77B3D9;
+  --blue-dark: #0388A6;
+  --green: #1C8C6C;
+  --gray: #D9D8D7;
+}
+
 /*TODO: improve this styles*/
 body {
   margin: 0;
@@ -20,10 +28,5 @@ code {
 }
 
 #root {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 7.5rem;
+  background-color: var(--blue-dark);
 }

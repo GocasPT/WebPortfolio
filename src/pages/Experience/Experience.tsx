@@ -9,10 +9,14 @@ import '@/assets/Experience.css'
 export const Experience = () => {
   return (
     <div>
-      <h1 className='title'>Experience</h1>
+      <h2 className='title'>Experience</h2>
+
       {/* TODO: adicionar texto */}
       <p className='text'>Texto porque sim</p>
-      <h2 className='title'>Program Language</h2>
+      <p className="text">GitHub API (show profile info)</p>
+      <p className="text">LettCode API (show profile info)</p>
+
+      <h3 className='title'>Program Language</h3>
       <ul className='autolayout'>
         {PROGRAMMING_LIST.Languagues.map((item) => {
           return (
@@ -28,7 +32,8 @@ export const Experience = () => {
           )
         })}
       </ul>
-      <h2 className='title'>Frameworks</h2>
+
+      <h3 className='title'>Frameworks</h3>
       <ul className='autolayout'>
         {PROGRAMMING_LIST.Frameworks.map((item) => {
           return (
@@ -44,7 +49,8 @@ export const Experience = () => {
           )
         })}
       </ul>
-      <h2 className='title'>Software</h2>
+
+      <h3 className='title'>Software</h3>
       <ul className='autolayout'>
         {SOFTWARE_LIST.map((item) => {
           return (

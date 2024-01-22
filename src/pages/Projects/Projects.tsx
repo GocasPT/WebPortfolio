@@ -9,10 +9,12 @@ import "@/assets/Projects.css"
 export const Projects = () => {
   return (
     <div>
-      <h1 className='title'>Projects</h1>
+      <h2 className='title'>Projects</h2>
+
       {/* TODO: adicionar texto */}
       <p className='text'>Texto porque sim</p>
-      <h2 className="title">Group</h2>
+
+      <h3 className="title">Group</h3>
       <ul className="autolayout">
         {ProjectsList.Group.map((item) => {
           return (
@@ -28,7 +30,8 @@ export const Projects = () => {
           )
         })}
       </ul>
-      <h2 className="title">Solo</h2>
+      
+      <h3 className="title">Solo</h3>
       <ul className="autolayout">
         {ProjectsList.Solo.map((item) => {
           return (

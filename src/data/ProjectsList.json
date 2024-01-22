@@ -4,7 +4,9 @@
         "name": "CanSat",
         "description": "CanSat: Educational project where students design, build, and launch a small satellite housed in a soda-can-sized container. Typically used in STEM programs, CanSats provide hands-on experience in satellite development, telemetry, and data analysis. Aiming to inspire future engineers and scientists, CanSats offer a practical introduction to the principles of aerospace engineering.",
         "icon": "Google",
-        "url": "https://www.esero.pt/projetos-escolares/2022-2023/cansatpt"
+        "url": "https://www.esero.pt/projetos-escolares/2022-2023/cansatpt",
+        "done": true,
+        "highlight": false
       }
     ],
     "Solo": [
@@ -12,37 +14,49 @@
         "name": "TopeBot",
         "description": "Discord bot with many features. In develop...",
         "icon": "Github",
-        "url": "https://github.com/GocasPT/TopeBot-Discord.js"
+        "url": "https://github.com/GocasPT/TopeBot-Discord.js",
+        "done": true,
+        "highlight": true
       },
       {
         "name": "The 25 Game",
         "description": "Simples mobile game. In develop...",
         "icon": "Loading",
-        "url": ""
+        "url": "",
+        "done": false,
+        "highlight": true
       },
       {
         "name": "MyTimer",
         "description": "Google extension to time (Pomodoro Technique). In develop...",
         "icon": "Loading",
-        "url": ""
+        "url": "",
+        "done": false,
+        "highlight": false
       },
       {
         "name": "TwitchAlert",
         "description": "Chrome extension to notify when person go live. In develop...",
         "icon": "Loading",
-        "url": ""
+        "url": "",
+        "done": false,
+        "highlight": false
       },
       {
         "name": "ScheduleWiz",
         "description": "Program to find the best schedule for you. In develop...",
         "icon": "Loading",
-        "url": ""
+        "url": "",
+        "done": false,
+        "highlight": false
       },
       {
         "name": "NUI Builder",
         "description": "Ncurses UI Builder for C/C++. In develop...",
         "icon": "Loading",
-        "url": ""
+        "url": "",
+        "done": false,
+        "highlight": true
       }
     ]
   }

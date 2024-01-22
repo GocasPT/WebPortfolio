@@ -8,16 +8,14 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        {Pages.map((page) => {
-          return (
-            <Route key={page.path} path={page.path} element={
-              <div id='content-wrap'>
+          {Pages.map((page) => {
+            return (
+              <Route key={page.path} path={page.path} element={
                 <page.component />
-              </div>
-            } />
-          );
-        })}
-      </Routes>
+              } />
+            );
+          })}
+        </Routes>
       <Footer />
     </BrowserRouter>
   );

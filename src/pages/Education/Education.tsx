@@ -5,13 +5,13 @@ import EducatiobList from "@/data/EducationList.json"
 export const Education = () => {
   return (
     <div>
-      <h1 className="title">Education</h1>
+      <h2 className="title">Education</h2>
 
       {EducatiobList.map((item) => {
         return (
-          <div key={item.name}>
-            <p>{item.name}</p>
-            <p>{item.educationAres}</p>
+          <div key={item.name} className="text">
+            <p>{item.name} ({item.acronym})</p>
+            <p>{item.educationLevel} - {item.educationAres}</p>
             <p>{item.yearsStart} to {item.yearEnd}</p>
           </div>
         )
