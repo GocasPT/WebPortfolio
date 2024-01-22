@@ -1,23 +1,23 @@
 [
-    {
-        "name": "CS:GO",
-        "description": "CS:GO is a fiercely competitive first-person shooter where players choose sides as Terrorists or Counter-Terrorists. With strategic gameplay and precise gunplay, teams clash in thrilling matches to achieve objectives or eliminate opponents. Customize your weapons, coordinate with your team, and become a skilled tactician in this globally renowned online multiplayer sensation.",
-        "icon": "ICON_csgo.png",
-        "art": "ART_csgo.jpg",
-        "url": "https://www.counter-strike.net/news"
-    },
-    {
-        "name": "Minecraft",
-        "description": "Minecraft is a renowned sandbox adventure where players dive into a blocky, procedurally generated world. Unleash your creativity as you construct, mine, and craft your way to survival. With limitless possibilities, build anything from modest homes to epic fortresses and embark on thrilling adventures in this pixelated wonderland.",
-        "icon": "ICON_minecraft.png",
-        "art": "ART_minecraft.jpg",
-        "url": "https://www.minecraft.net"
-    },
-    {
-        "name": "Valheim",
-        "description": "Valheim is an enthralling survival game that immerses players in the mythical lands of Norse folklore. As a Viking warrior, embark on a quest to conquer the vibrant and treacherous world of Valheim. Gather resources, build epic structures, and face formidable foes, either alone or alongside friends, in this engaging fusion of survival and exploration.",
-        "icon": "ICON_valheim.png",
-        "art": "ART_valheim.jpg",
-        "url": "https://www.valheim.com"
-    }
+  {
+    "name": "CS2",
+    "description": "CS2: Counter-Strike sequel with updated graphics, new maps, and intense team-based multiplayer gameplay. Popular in esports for its competitive and strategic FPS action.",
+    "icon": "https://static.wikia.nocookie.net/logopedia/images/4/49/Counter-Strike_2_%28Icon%29.png",
+    "art": "https://images8.alphacoders.com/132/1329760.jpeg",
+    "url": "https://www.counter-strike.net/news"
+  },
+  {
+    "name": "Minecraft",
+    "description": "Minecraft: Sandbox game where players explore, build, and survive in a blocky, pixelated world. Offers limitless creativity, diverse landscapes, and endless possibilities for adventure.",
+    "icon": "https://cdn.icon-icons.com/icons2/2699/PNG/512/minecraft_logo_icon_168974.png",
+    "art": "https://xxboxnews.blob.core.windows.net/prod/sites/2/2021/12/Minecraft-Key-Art.jpg",
+    "url": "https://www.minecraft.net"
+  },
+  {
+    "name": "Valheim",
+    "description": "Valheim: Viking survival game set in a procedurally generated world. Players battle mythical creatures, gather resources, and craft to thrive in a captivating Norse-inspired realm. Highlighted for its cooperative multiplayer, engaging exploration, and unique blend of survival elements.",
+    "icon": "https://cdn3.emoji.gg/emojis/7160_Valheim_game_logo.png",
+    "art": "https://cdn.alza.cz/Foto/ImgGalery/Image/valheim-cover.jpg",
+    "url": "https://www.valheim.com"
+  }
 ]

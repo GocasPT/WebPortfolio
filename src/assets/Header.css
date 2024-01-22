@@ -1,0 +1,28 @@
+.header-list {
+    margin: 0;
+    padding: 1rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header-list-item {
+    font-size: large;
+}
+
+.header-list-item div.btn {
+    border: 0;
+    background-color: var(--blue-dark);
+    font-size: larger;
+}
+
+.header-list-item div.btn:hover {
+    background-color: var(--green);
+}
+
+.active-link > .btn {
+    background-color: var(--red) !important;
+    color: var(--gray);
+}

@@ -1,0 +1,39 @@
+.footer {
+    margin-top: 1.5rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+.footer > *:first-child {
+    background-color: var(--blue-dark);
+}
+
+.footer-title {
+    padding: 1rem 0 0 0;
+    font-size: 2rem;
+}
+
+.footer-list {
+    padding: 0 0 2rem 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-list-item {
+    margin: 0 0.5rem;
+    text-decoration: none;
+
+}
+
+.footer-list-item a {
+    color: var(--red);
+    font-size: 2.5rem;
+}
+
+.footer-list-item a:hover {
+    color: var(--green);
+    transition: color 0.15s ease-in-out;
+}
